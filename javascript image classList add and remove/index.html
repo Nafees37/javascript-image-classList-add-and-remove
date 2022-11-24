@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>age category</title>
+    <style>
+      img {
+        width: 100%;
+        height: 100%;
+        border: 1px solid gray;
+        border-radius: 10px;
+      }
+
+      button {
+        max-width: 100px;
+        height: 100px;
+        outline: none;
+        border: none;
+        padding: 0;
+        border: 1px solid gray;
+        border-radius: 10px;
+        margin: 5px;
+        cursor: pointer;
+      }
+
+      #mainDiv {
+        max-width: 300px;
+        height: 200px;
+      }
+
+      .f_img {
+        max-width: 500px !important;
+        height: 300px !important;
+      }
+
+      .s_img {
+        max-width: 600px !important;
+        height: 400px !important;
+      }
+
+      .t_img {
+        max-width: 700px !important;
+        height: 400px !important;
+      }
+
+      .fo_img {
+        max-width: 800px !important;
+        height: 400px !important;
+      }
+
+      .fiv_img {
+        max-width: 900px !important;
+        height: 400px !important;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="mainDiv" style="margin: 40px auto 10px auto;">
+      <img src="images/egg.jpg" alt="Image" />
+    </div>
+
+    <div style="max-width: 650px; display: flex; align-items: center; justify-content: center; margin: 0 auto;">
+      <button onclick="button_1fun()"><img src="images/egg.jpg" alt="Image" /></button>
+      <button onclick="button_2fun()"><img src="images/egg.jpg" alt="Image" /></button>
+      <button onclick="button_3fun()"><img src="images/egg.jpg" alt="Image" /></button>
+      <button onclick="button_4fun()"><img src="images/egg.jpg" alt="Image" /></button>
+      <button onclick="button_5fun()"><img src="images/egg.jpg" alt="Image" /></button>
+    </div>
+
+    <script>
+      function button_1fun() {
+        let main = document.getElementById("mainDiv");
+
+        main.classList.add("f_img");
+
+        main.classList.remove("s_img");
+        main.classList.remove("t_img");
+        main.classList.remove("fo_img");
+        main.classList.remove("fiv_img");
+      }
+
+      function button_2fun() {
+        let main = document.getElementById("mainDiv");
+
+        main.classList.add("s_img");
+
+        main.classList.remove("f_img");
+        main.classList.remove("t_img");
+        main.classList.remove("fo_img");
+        main.classList.remove("fiv_img");
+      }
+
+      function button_3fun() {
+        let main = document.getElementById("mainDiv");
+
+        main.classList.add("t_img");
+
+        main.classList.remove("f_img");
+        main.classList.remove("s_img");
+        main.classList.remove("fo_img");
+        main.classList.remove("fiv_img");
+      }
+
+      function button_4fun() {
+        let main = document.getElementById("mainDiv");
+
+        main.classList.add("fo_img");
+
+        main.classList.remove("f_img");
+        main.classList.remove("s_img");
+        main.classList.remove("t_img");
+        main.classList.remove("fiv_img");
+      }
+
+      function button_5fun() {
+        let main = document.getElementById("mainDiv");
+
+        main.classList.add("fiv_img");
+
+        main.classList.remove("f_img");
+        main.classList.remove("s_img");
+        main.classList.remove("t_img");
+        main.classList.remove("fo_img");
+      }
+    </script>
+  </body>
+</html>
